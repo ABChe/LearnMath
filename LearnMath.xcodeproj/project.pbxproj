@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F25FA0282200980700A519D5 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = F25FA0272200980700A519D5 /* ViewController1.m */; };
+		F25FA02B2200985E00A519D5 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = F25FA02A2200985E00A519D5 /* ViewController2.m */; };
 		F2CD1E3A21FDFA3500C5E33E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CD1E3921FDFA3500C5E33E /* AppDelegate.m */; };
 		F2CD1E3D21FDFA3500C5E33E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CD1E3C21FDFA3500C5E33E /* ViewController.m */; };
 		F2CD1E4021FDFA3500C5E33E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2CD1E3E21FDFA3500C5E33E /* Main.storyboard */; };
@@ -15,6 +17,7 @@
 		F2CD1E4821FDFA3700C5E33E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CD1E4721FDFA3700C5E33E /* main.m */; };
 		F2CD1E5221FDFA3700C5E33E /* LearnMathTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CD1E5121FDFA3700C5E33E /* LearnMathTests.m */; };
 		F2CD1E5D21FDFA3700C5E33E /* LearnMathUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CD1E5C21FDFA3700C5E33E /* LearnMathUITests.m */; };
+		F2CD1E7321FDFE7400C5E33E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CD1E7221FDFE7400C5E33E /* BaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F25FA0262200980700A519D5 /* ViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		F25FA0272200980700A519D5 /* ViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		F25FA0292200985E00A519D5 /* ViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		F25FA02A2200985E00A519D5 /* ViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 		F2CD1E3521FDFA3500C5E33E /* LearnMath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnMath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2CD1E3821FDFA3500C5E33E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F2CD1E3921FDFA3500C5E33E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +58,8 @@
 		F2CD1E5821FDFA3700C5E33E /* LearnMathUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnMathUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2CD1E5C21FDFA3700C5E33E /* LearnMathUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LearnMathUITests.m; sourceTree = "<group>"; };
 		F2CD1E5E21FDFA3700C5E33E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2CD1E7121FDFE7400C5E33E /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		F2CD1E7221FDFE7400C5E33E /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,7 @@
 				F2CD1E3921FDFA3500C5E33E /* AppDelegate.m */,
 				F2CD1E3B21FDFA3500C5E33E /* ViewController.h */,
 				F2CD1E3C21FDFA3500C5E33E /* ViewController.m */,
+				F2CD1E6A21FDFE0F00C5E33E /* Class */,
 				F2CD1E3E21FDFA3500C5E33E /* Main.storyboard */,
 				F2CD1E4121FDFA3700C5E33E /* Assets.xcassets */,
 				F2CD1E4321FDFA3700C5E33E /* LaunchScreen.storyboard */,
@@ -130,6 +140,19 @@
 				F2CD1E5E21FDFA3700C5E33E /* Info.plist */,
 			);
 			path = LearnMathUITests;
+			sourceTree = "<group>";
+		};
+		F2CD1E6A21FDFE0F00C5E33E /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				F2CD1E7121FDFE7400C5E33E /* BaseViewController.h */,
+				F2CD1E7221FDFE7400C5E33E /* BaseViewController.m */,
+				F25FA0262200980700A519D5 /* ViewController1.h */,
+				F25FA0272200980700A519D5 /* ViewController1.m */,
+				F25FA0292200985E00A519D5 /* ViewController2.h */,
+				F25FA02A2200985E00A519D5 /* ViewController2.m */,
+			);
+			path = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F25FA0282200980700A519D5 /* ViewController1.m in Sources */,
+				F2CD1E7321FDFE7400C5E33E /* BaseViewController.m in Sources */,
 				F2CD1E3D21FDFA3500C5E33E /* ViewController.m in Sources */,
 				F2CD1E4821FDFA3700C5E33E /* main.m in Sources */,
 				F2CD1E3A21FDFA3500C5E33E /* AppDelegate.m in Sources */,
+				F25FA02B2200985E00A519D5 /* ViewController2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
