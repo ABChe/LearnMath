@@ -10,4 +10,5 @@
 
 @interface BaseViewController : UIViewController
 
+@property (nonatomic, copy) NSString *questionDescription;
 @end
