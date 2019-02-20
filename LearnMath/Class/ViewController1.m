@@ -8,6 +8,28 @@
 
 #import "ViewController1.h"
 
+@interface NSString (Reverse)
+
+- (NSString *)reverse;
+@end
+
+@implementation NSString (Reverse)
+
+- (NSString *)reverse {
+    NSMutableString *reverseString = [[NSMutableString alloc] initWithCapacity:self.length];
+
+    [self enumerateSubstringsInRange:NSMakeRange(0, self.length)
+                             options:NSStringEnumerationReverse | NSStringEnumerationByComposedCharacterSequences
+                          usingBlock:^(NSString * _Nullable substring, NSRange substringRange, NSRange enclosingRange, BOOL * _Nonnull stop) {
+                              [reverseString appendString:substring];
+                          }];
+    
+    NSString *string = [NSString stringWithString:reverseString];
+    return string;
+}
+@end
+
+
 @interface ViewController1 ()
 
 @end
@@ -18,7 +40,19 @@
     [super viewDidLoad];
 
     self.questionDescription = @"如何自己实现一个十进制转二进制的方法";
+    [self convertDecimalToBinary:98];
 }
 
+- (NSString *)convertDecimalToBinary:(NSInteger)decimalNumber {
+    NSMutableString *binaryString = [NSMutableString new];
+    
+    while (decimalNumber) {
+        [binaryString appendString:[NSString stringWithFormat:@"%ld", (decimalNumber & 1)]];
+        decimalNumber = decimalNumber >> 1;
+    }
+
+    NSString *string = [NSString stringWithString:[binaryString reverse]];
+    return string;
+}
 
 @end
