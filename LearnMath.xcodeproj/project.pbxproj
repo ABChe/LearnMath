@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F25D7F66221CEB3B006163D1 /* NSString+Reverse.m in Sources */ = {isa = PBXBuildFile; fileRef = F25D7F65221CEB3B006163D1 /* NSString+Reverse.m */; };
 		F25FA0282200980700A519D5 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = F25FA0272200980700A519D5 /* ViewController1.m */; };
 		F25FA02B2200985E00A519D5 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = F25FA02A2200985E00A519D5 /* ViewController2.m */; };
 		F2CD1E3A21FDFA3500C5E33E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CD1E3921FDFA3500C5E33E /* AppDelegate.m */; };
@@ -39,8 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F25D7F64221CEB3B006163D1 /* NSString+Reverse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Reverse.h"; sourceTree = "<group>"; };
-		F25D7F65221CEB3B006163D1 /* NSString+Reverse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Reverse.m"; sourceTree = "<group>"; };
 		F25FA0262200980700A519D5 /* ViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
 		F25FA0272200980700A519D5 /* ViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
 		F25FA0292200985E00A519D5 /* ViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
@@ -154,8 +151,6 @@
 				F25FA0272200980700A519D5 /* ViewController1.m */,
 				F25FA0292200985E00A519D5 /* ViewController2.h */,
 				F25FA02A2200985E00A519D5 /* ViewController2.m */,
-				F25D7F64221CEB3B006163D1 /* NSString+Reverse.h */,
-				F25D7F65221CEB3B006163D1 /* NSString+Reverse.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -292,7 +287,6 @@
 			files = (
 				F25FA0282200980700A519D5 /* ViewController1.m in Sources */,
 				F2CD1E7321FDFE7400C5E33E /* BaseViewController.m in Sources */,
-				F25D7F66221CEB3B006163D1 /* NSString+Reverse.m in Sources */,
 				F2CD1E3D21FDFA3500C5E33E /* ViewController.m in Sources */,
 				F2CD1E4821FDFA3700C5E33E /* main.m in Sources */,
 				F2CD1E3A21FDFA3500C5E33E /* AppDelegate.m in Sources */,
