@@ -72,25 +72,56 @@
     
     NSInteger d = randomNumber / 7;
     NSInteger e = randomNumber - d * 7;
-    
     NSMutableArray *aArray = [NSMutableArray array];
-    for (int i = 1; i < 10; i++) {
-        if ((i + e) % 7 == a) {
-            [aArray addObject:@(i)];
-        }
+    int num = 0;
+    int i = 0;
+    while (1) {
+        num = a + 7 * i - e;
+        i++;
+        if (num < 1) continue;
+        if (num > 9) break;
+        [aArray addObject:@(num)];
     }
+    
     NSMutableArray *bArray = [NSMutableArray array];
-    for (int i = 0; i < 10; i++) {
-        if ((i + e) % 7 == b) {
-            [bArray addObject:@(i)];
-        }
+    num = 0;
+    i = 0;
+    while (1) {
+        num = b + 7 * i - e;
+        i++;
+        if (num < 0) continue;
+        if (num > 9) break;
+        [bArray addObject:@(num)];
     }
+    
     NSMutableArray *cArray = [NSMutableArray array];
-    for (int i = 0; i < 10; i++) {
-        if ((i + e) % 7 == c) {
-            [cArray addObject:@(i)];
-        }
+    num = 0;
+    i = 0;
+    while (1) {
+        num = c + 7 * i - e;
+        i++;
+        if (num < 0) continue;
+        if (num > 9) break;
+        [cArray addObject:@(num)];
     }
+//    NSMutableArray *aArray = [NSMutableArray array];
+//    for (int i = 1; i < 10; i++) {
+//        if ((i + e) % 7 == a) {
+//            [aArray addObject:@(i)];
+//        }
+//    }
+//    NSMutableArray *bArray = [NSMutableArray array];
+//    for (int i = 0; i < 10; i++) {
+//        if ((i + e) % 7 == b) {
+//            [bArray addObject:@(i)];
+//        }
+//    }
+//    NSMutableArray *cArray = [NSMutableArray array];
+//    for (int i = 0; i < 10; i++) {
+//        if ((i + e) % 7 == c) {
+//            [cArray addObject:@(i)];
+//        }
+//    }
     
     NSMutableArray *resultArray = [NSMutableArray array];
     for (NSNumber *aNumber in aArray) {
