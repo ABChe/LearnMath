@@ -19,6 +19,21 @@
 
     self.questionDescription = @"生活中有哪些用到了余数的思想";
     
+    [self example1];
+}
+
+
+#pragma mark -
+
+/**
+ 数字加密
+ */
+- (void)example1 {
+    /*
+     加密规则：1. 先对每个三位数的个、十、百位数，都加上一个较大的随机数
+             2. 然后将每位上的数都除以 7，用所得的余数代替原有的个、十、百位数
+             3. 最后将第一个数和第三个数交换
+     */
     NSInteger number = 625;
     NSInteger randomNumber = 590127;
     
@@ -34,6 +49,7 @@
     NSLog(@"\n加密前的数字:%@ \n加密后的数字:%@ \n解密后的数字:%@ \n结果:%@", numberString, encryptedNumberString, decryptedNumberArray, resultString);
 }
 
+// 返回加密后的数字
 - (NSString *)encryptNumber:(NSInteger)number randomNumber:(NSInteger)randomNumber {
     NSString *numberString = [NSString stringWithFormat:@"%ld", number];
     
@@ -51,6 +67,7 @@
     b = (b + randomNumber) % 7;
     c = (c + randomNumber) % 7;
     
+    // 交换个位和百位
     a = a + c;
     c = a - c;
     a = a - c;
@@ -59,22 +76,24 @@
     return result;
 }
 
+// 返回所有的可能
 - (NSArray *)decryptNumber:(NSInteger)number randomNumber:(NSInteger)randomNumber {
     NSInteger a, b, c;
     a = number / 100;
     b = number / 10 % 10;
     c = number % 10;
     
-    // 交换百位和个位 514
+    // 交换个位和百位
     a = a - c;
     c = c + a;
     a = c - a;
     
     NSInteger d = randomNumber / 7;
     NSInteger e = randomNumber - d * 7;
+    
     NSMutableArray *aArray = [NSMutableArray array];
-    int num = 0;
-    int i = 0;
+    NSInteger num = 0;
+    NSInteger i = 0;
     while (1) {
         num = a + 7 * i - e;
         i++;
