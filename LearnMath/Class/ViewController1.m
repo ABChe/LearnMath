@@ -40,7 +40,12 @@
     [super viewDidLoad];
 
     self.questionDescription = @"如何自己实现一个十进制转二进制的方法";
-    [self convertDecimalToBinary:98];
+    
+    NSInteger number = 98;
+    
+    NSString *string = [self convertDecimalToBinary:number];
+    
+    NSLog(@"\n十进制数字：%ld \n转换成二进制为：%@", number, string);
 }
 
 - (NSString *)convertDecimalToBinary:(NSInteger)decimalNumber {
