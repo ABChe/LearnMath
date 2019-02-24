@@ -64,8 +64,9 @@ static NSString *cellIdentifier = @"cellIdentifier";
 
 - (NSArray *)titleArray {
     if (_titleArray == nil) {
-        _titleArray = @[@"二进制:不了解计算机的源头,你学什么编程",
-                        @"余数:原来取余操作本身就是个哈希函数"];
+        _titleArray = @[@"二进制：不了解计算机的源头，你学什么编程",
+                        @"余数：原来取余操作本身就是个哈希函数",
+                        @"迭代法：不用变成语言的自带函数，你会如何计算平方根"];
     }
     return _titleArray;
 }

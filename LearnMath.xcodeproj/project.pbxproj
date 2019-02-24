@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F24DA6DE2222DA97005557B3 /* ViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = F24DA6DD2222DA97005557B3 /* ViewController3.m */; };
 		F25FA0282200980700A519D5 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = F25FA0272200980700A519D5 /* ViewController1.m */; };
 		F25FA02B2200985E00A519D5 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = F25FA02A2200985E00A519D5 /* ViewController2.m */; };
 		F2CD1E3A21FDFA3500C5E33E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CD1E3921FDFA3500C5E33E /* AppDelegate.m */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F24DA6DC2222DA97005557B3 /* ViewController3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController3.h; sourceTree = "<group>"; };
+		F24DA6DD2222DA97005557B3 /* ViewController3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController3.m; sourceTree = "<group>"; };
 		F25FA0262200980700A519D5 /* ViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
 		F25FA0272200980700A519D5 /* ViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
 		F25FA0292200985E00A519D5 /* ViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
@@ -151,6 +154,8 @@
 				F25FA0272200980700A519D5 /* ViewController1.m */,
 				F25FA0292200985E00A519D5 /* ViewController2.h */,
 				F25FA02A2200985E00A519D5 /* ViewController2.m */,
+				F24DA6DC2222DA97005557B3 /* ViewController3.h */,
+				F24DA6DD2222DA97005557B3 /* ViewController3.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -291,6 +296,7 @@
 				F2CD1E4821FDFA3700C5E33E /* main.m in Sources */,
 				F2CD1E3A21FDFA3500C5E33E /* AppDelegate.m in Sources */,
 				F25FA02B2200985E00A519D5 /* ViewController2.m in Sources */,
+				F24DA6DE2222DA97005557B3 /* ViewController3.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
