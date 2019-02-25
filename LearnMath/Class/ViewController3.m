@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.questionDescription = @"在你曾经的项目中是否用过迭代法？如果有，你觉得迭代法最大的特点是什么？如果没用过，你想想看现在的项目中是否有可以使用的地方？";
     
     [self example1];
 }

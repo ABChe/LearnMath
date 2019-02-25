@@ -28,7 +28,7 @@
 
 - (UILabel *)questionLabel {
     if (_questionLabel == nil) {
-        _questionLabel = [[UILabel alloc] init];
+        _questionLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), 0)];
         _questionLabel.textColor = [UIColor darkTextColor];
         _questionLabel.numberOfLines = 0;
         _questionLabel.font = [UIFont systemFontOfSize:20.f];
