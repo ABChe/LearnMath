@@ -8,6 +8,32 @@
 
 #import "BaseViewController.h"
 
+@interface NSString (SizeCalculate)
+
+- (CGSize)calculateSizeWithFont:(UIFont *)font size:(CGSize)size  mode:(NSLineBreakMode)lineBreakMode;
+@end
+
+@implementation NSString (SizeCalculate)
+
+- (CGSize)calculateSizeWithFont:(UIFont *)font size:(CGSize)size  mode:(NSLineBreakMode)lineBreakMode {
+    if (!font) return CGSizeMake(0, 0);
+    
+    NSMutableDictionary *attDic = [NSMutableDictionary new];
+    attDic[NSFontAttributeName] = font;
+    if (lineBreakMode != NSLineBreakByCharWrapping) {
+        NSMutableParagraphStyle *paragraphStyle = [NSMutableParagraphStyle new];
+        paragraphStyle.lineBreakMode = lineBreakMode;
+        attDic[NSParagraphStyleAttributeName] = paragraphStyle;
+    }
+    CGRect rect = [self boundingRectWithSize:size
+                                     options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
+                                  attributes:attDic
+                                     context:nil];
+    return rect.size;
+}
+@end
+
+
 @interface BaseViewController ()
 
 @property (nonatomic, strong) UILabel *questionLabel;
@@ -43,8 +69,10 @@
 - (void)setQuestionDescription:(NSString *)questionDescription {
     _questionDescription = questionDescription;
     
-    CGSize size = [_questionDescription sizeWithAttributes:@{NSFontAttributeName : _questionLabel.font}];
     _questionLabel.text = _questionDescription;
+    CGSize size = [_questionLabel.text calculateSizeWithFont:_questionLabel.font
+                                                        size:_questionLabel.frame.size
+                                                        mode:NSLineBreakByWordWrapping];
     _questionLabel.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.frame), ceil(size.height));
 }
 
