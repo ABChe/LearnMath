@@ -51,7 +51,6 @@
                  qPermutationArray:self.qPermutationArray];
 }
 
-
 /**
  获取马匹全排列
 
@@ -75,7 +74,6 @@
     }
 }
 
-
 /**
  比较田忌马匹的全部排列方案 和 齐王马匹的全部排列方案
 
@@ -91,7 +89,6 @@
         }
     }
 }
-
 
 /**
  比较具体马匹排列方案
@@ -144,6 +141,7 @@
                  qPermutationArray:self.qPermutationArray];
 }
 
+
 #pragma mark -
 
 - (NSDictionary *)tHouseTimeDic  {
@@ -163,4 +161,5 @@
     }
     return _qHouseTimeDic;
 }
+
 @end
