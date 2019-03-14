@@ -69,7 +69,8 @@ static NSString *cellIdentifier = @"cellIdentifier";
                         @"迭代法：不用变成语言的自带函数，你会如何计算平方根",
                         @"数学归纳法：如何用数学归纳提升代码的运行效率？",
                         @"递归（上）：泛化数学归纳，如何将复杂的问题简单化",
-                        @"递归（下）：分而治之，从归并排序到MapReduce"];
+                        @"递归（下）：分而治之，从归并排序到MapReduce",
+                        @"排列：如何让计算机学会“田忌赛马”"];
     }
     return _titleArray;
 }

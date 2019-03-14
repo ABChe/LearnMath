@@ -22,6 +22,7 @@
 		F2CD1E5221FDFA3700C5E33E /* LearnMathTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CD1E5121FDFA3700C5E33E /* LearnMathTests.m */; };
 		F2CD1E5D21FDFA3700C5E33E /* LearnMathUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CD1E5C21FDFA3700C5E33E /* LearnMathUITests.m */; };
 		F2CD1E7321FDFE7400C5E33E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CD1E7221FDFE7400C5E33E /* BaseViewController.m */; };
+		F2FF5469223A8B220003B748 /* ViewController7.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FF5468223A8B220003B748 /* ViewController7.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		F2CD1E5E21FDFA3700C5E33E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2CD1E7121FDFE7400C5E33E /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		F2CD1E7221FDFE7400C5E33E /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		F2FF5467223A8B220003B748 /* ViewController7.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController7.h; sourceTree = "<group>"; };
+		F2FF5468223A8B220003B748 /* ViewController7.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController7.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +174,8 @@
 				F234EE9D222EB5B200CEB1D4 /* ViewController5.m */,
 				F22454EA2237E56F00CA27C6 /* ViewController6.h */,
 				F22454EB2237E56F00CA27C6 /* ViewController6.m */,
+				F2FF5467223A8B220003B748 /* ViewController7.h */,
+				F2FF5468223A8B220003B748 /* ViewController7.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -310,6 +315,7 @@
 				F2CD1E3D21FDFA3500C5E33E /* ViewController.m in Sources */,
 				F2CD1E4821FDFA3700C5E33E /* main.m in Sources */,
 				F2CD1E3A21FDFA3500C5E33E /* AppDelegate.m in Sources */,
+				F2FF5469223A8B220003B748 /* ViewController7.m in Sources */,
 				F22454EC2237E56F00CA27C6 /* ViewController6.m in Sources */,
 				F234EE9E222EB5B200CEB1D4 /* ViewController5.m in Sources */,
 				F25FA02B2200985E00A519D5 /* ViewController2.m in Sources */,
