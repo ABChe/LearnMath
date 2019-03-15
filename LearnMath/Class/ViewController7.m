@@ -16,6 +16,8 @@
 @property (nonatomic, strong) NSMutableArray *tPermutationArray; // 田忌马匹的全部排列方案
 @property (nonatomic, strong) NSMutableArray *qPermutationArray; // 齐王马匹的全部排列方案
 
+@property (nonatomic, copy) NSString *password;
+
 @end
 
 @implementation ViewController7
@@ -149,41 +151,43 @@
 #pragma mark -
 
 - (void)question {
+    self.password = @"ceda";
     NSArray *characters = @[@"a", @"b", @"c", @"d", @"e"];
-    NSMutableArray *passwordArray = [NSMutableArray array];
-    [self getAllPermutationPasswordWithCharacters:characters
-                               currentResultArray:[NSArray array]
-                                 totalResultArray: passwordArray];
     
-    for (NSArray *array in passwordArray) {
-        NSString *password = [array componentsJoinedByString:@""];
-        NSLog(@"\n%@", password);
-    }
-    
+    [self crackPasswordWithCharacters:characters currentGuessPassword:[NSString string]];
 }
 
 /**
- 获取密码的全部排列方式
+ 穷举法破解密码
 
- @param characters 所有密码字符
- @param currentResultArray 当前排列方式
- @param totalResultArray 全部排列方式
+ @param characters 密码所有可能的字符
+ @param currentGuessPassword 当前猜测的密码
+ @return 是否破解成功
  */
-- (void)getAllPermutationPasswordWithCharacters:(NSArray *)characters currentResultArray:(NSArray *)currentResultArray totalResultArray:(NSMutableArray *)totalResultArray
-{
-    if (currentResultArray.count == 4) {
-        [totalResultArray addObject:currentResultArray];
-        return;
+- (BOOL)crackPasswordWithCharacters:(NSArray *)characters currentGuessPassword:(NSString *)currentGuessPassword {
+    if (currentGuessPassword.length == 4) {
+        BOOL succeed = [self verifyPassword:currentGuessPassword];
+        NSLog(@"\n %@", currentGuessPassword);
+        return succeed;
     }
     
-    for (int i = 0; i < characters.count; i++) {
-        NSString *character = characters[i];
-        NSMutableArray *array = [NSMutableArray arrayWithArray:currentResultArray];
-        [array addObject:character];
-        [self getAllPermutationPasswordWithCharacters:characters
-                                   currentResultArray:array
-                                     totalResultArray:totalResultArray];
+    for (NSString *character in characters) {
+        NSMutableString *string = [NSMutableString stringWithString:currentGuessPassword];
+        [string appendString:character];
+        
+        BOOL succeed =  [self crackPasswordWithCharacters:characters currentGuessPassword:string];
+        
+        if (succeed) {
+            NSLog(@"\n密码破解成功，密码为：%@", string);
+            return succeed;
+        } else continue;
     }
+    
+    return NO;
+}
+
+- (BOOL)verifyPassword:(NSString *)password {
+    return [self.password isEqualToString:password];
 }
 
 
