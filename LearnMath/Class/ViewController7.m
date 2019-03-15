@@ -23,8 +23,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.questionDescription = @"假设有一个4位字母密码，每位密码是a~e之间的小写字母。你能否编写一段密码，来暴力破解密码？（提示：根据可重复排列的规律，生成所有可能的四位密码）";
+    
 //    [self example1];
-    [self example2];
+//    [self example2];
+    
+    [self question];
 }
 
 
@@ -139,6 +143,47 @@
     
     [self compareTPermutationArray:self.tPermutationArray
                  qPermutationArray:self.qPermutationArray];
+}
+
+
+#pragma mark -
+
+- (void)question {
+    NSArray *characters = @[@"a", @"b", @"c", @"d", @"e"];
+    NSMutableArray *passwordArray = [NSMutableArray array];
+    [self getAllPermutationPasswordWithCharacters:characters
+                               currentResultArray:[NSArray array]
+                                 totalResultArray: passwordArray];
+    
+    for (NSArray *array in passwordArray) {
+        NSString *password = [array componentsJoinedByString:@""];
+        NSLog(@"\n%@", password);
+    }
+    
+}
+
+/**
+ 获取密码的全部排列方式
+
+ @param characters 所有密码字符
+ @param currentResultArray 当前排列方式
+ @param totalResultArray 全部排列方式
+ */
+- (void)getAllPermutationPasswordWithCharacters:(NSArray *)characters currentResultArray:(NSArray *)currentResultArray totalResultArray:(NSMutableArray *)totalResultArray
+{
+    if (currentResultArray.count == 4) {
+        [totalResultArray addObject:currentResultArray];
+        return;
+    }
+    
+    for (int i = 0; i < characters.count; i++) {
+        NSString *character = characters[i];
+        NSMutableArray *array = [NSMutableArray arrayWithArray:currentResultArray];
+        [array addObject:character];
+        [self getAllPermutationPasswordWithCharacters:characters
+                                   currentResultArray:array
+                                     totalResultArray:totalResultArray];
+    }
 }
 
 
