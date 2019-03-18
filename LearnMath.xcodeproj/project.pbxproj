@@ -13,6 +13,7 @@
 		F24DA6DE2222DA97005557B3 /* ViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = F24DA6DD2222DA97005557B3 /* ViewController3.m */; };
 		F25FA0282200980700A519D5 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = F25FA0272200980700A519D5 /* ViewController1.m */; };
 		F25FA02B2200985E00A519D5 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = F25FA02A2200985E00A519D5 /* ViewController2.m */; };
+		F26045E2223FCBAC00EA7F1D /* ViewController8.m in Sources */ = {isa = PBXBuildFile; fileRef = F26045E1223FCBAC00EA7F1D /* ViewController8.m */; };
 		F2CD1E3A21FDFA3500C5E33E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CD1E3921FDFA3500C5E33E /* AppDelegate.m */; };
 		F2CD1E3D21FDFA3500C5E33E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CD1E3C21FDFA3500C5E33E /* ViewController.m */; };
 		F2CD1E4021FDFA3500C5E33E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2CD1E3E21FDFA3500C5E33E /* Main.storyboard */; };
@@ -55,6 +56,8 @@
 		F25FA0272200980700A519D5 /* ViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
 		F25FA0292200985E00A519D5 /* ViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
 		F25FA02A2200985E00A519D5 /* ViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		F26045E0223FCBAC00EA7F1D /* ViewController8.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController8.h; sourceTree = "<group>"; };
+		F26045E1223FCBAC00EA7F1D /* ViewController8.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController8.m; sourceTree = "<group>"; };
 		F2CD1E3521FDFA3500C5E33E /* LearnMath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnMath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2CD1E3821FDFA3500C5E33E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F2CD1E3921FDFA3500C5E33E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -176,6 +179,8 @@
 				F22454EB2237E56F00CA27C6 /* ViewController6.m */,
 				F2FF5467223A8B220003B748 /* ViewController7.h */,
 				F2FF5468223A8B220003B748 /* ViewController7.m */,
+				F26045E0223FCBAC00EA7F1D /* ViewController8.h */,
+				F26045E1223FCBAC00EA7F1D /* ViewController8.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -321,6 +326,7 @@
 				F25FA02B2200985E00A519D5 /* ViewController2.m in Sources */,
 				F24DA6DE2222DA97005557B3 /* ViewController3.m in Sources */,
 				F2225F32222D62940083B71F /* ViewController4.m in Sources */,
+				F26045E2223FCBAC00EA7F1D /* ViewController8.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
