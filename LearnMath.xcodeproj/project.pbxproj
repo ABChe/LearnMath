@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F20D0D012247B887002A16B6 /* ViewController9.m in Sources */ = {isa = PBXBuildFile; fileRef = F20D0D002247B887002A16B6 /* ViewController9.m */; };
 		F2225F32222D62940083B71F /* ViewController4.m in Sources */ = {isa = PBXBuildFile; fileRef = F2225F31222D62940083B71F /* ViewController4.m */; };
 		F22454EC2237E56F00CA27C6 /* ViewController6.m in Sources */ = {isa = PBXBuildFile; fileRef = F22454EB2237E56F00CA27C6 /* ViewController6.m */; };
 		F234EE9E222EB5B200CEB1D4 /* ViewController5.m in Sources */ = {isa = PBXBuildFile; fileRef = F234EE9D222EB5B200CEB1D4 /* ViewController5.m */; };
@@ -44,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F20D0CFF2247B887002A16B6 /* ViewController9.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController9.h; sourceTree = "<group>"; };
+		F20D0D002247B887002A16B6 /* ViewController9.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController9.m; sourceTree = "<group>"; };
 		F2225F30222D62940083B71F /* ViewController4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController4.h; sourceTree = "<group>"; };
 		F2225F31222D62940083B71F /* ViewController4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController4.m; sourceTree = "<group>"; };
 		F22454EA2237E56F00CA27C6 /* ViewController6.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController6.h; sourceTree = "<group>"; };
@@ -181,6 +184,8 @@
 				F2FF5468223A8B220003B748 /* ViewController7.m */,
 				F26045E0223FCBAC00EA7F1D /* ViewController8.h */,
 				F26045E1223FCBAC00EA7F1D /* ViewController8.m */,
+				F20D0CFF2247B887002A16B6 /* ViewController9.h */,
+				F20D0D002247B887002A16B6 /* ViewController9.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -315,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F20D0D012247B887002A16B6 /* ViewController9.m in Sources */,
 				F25FA0282200980700A519D5 /* ViewController1.m in Sources */,
 				F2CD1E7321FDFE7400C5E33E /* BaseViewController.m in Sources */,
 				F2CD1E3D21FDFA3500C5E33E /* ViewController.m in Sources */,
