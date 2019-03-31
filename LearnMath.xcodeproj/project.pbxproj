@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F20D0D012247B887002A16B6 /* ViewController9.m in Sources */ = {isa = PBXBuildFile; fileRef = F20D0D002247B887002A16B6 /* ViewController9.m */; };
+		F21F3C6122510140001BED90 /* NSString+CCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = F21F3C6022510140001BED90 /* NSString+CCAdd.m */; };
 		F2225F32222D62940083B71F /* ViewController4.m in Sources */ = {isa = PBXBuildFile; fileRef = F2225F31222D62940083B71F /* ViewController4.m */; };
 		F22454EC2237E56F00CA27C6 /* ViewController6.m in Sources */ = {isa = PBXBuildFile; fileRef = F22454EB2237E56F00CA27C6 /* ViewController6.m */; };
 		F234EE9E222EB5B200CEB1D4 /* ViewController5.m in Sources */ = {isa = PBXBuildFile; fileRef = F234EE9D222EB5B200CEB1D4 /* ViewController5.m */; };
@@ -48,6 +49,8 @@
 /* Begin PBXFileReference section */
 		F20D0CFF2247B887002A16B6 /* ViewController9.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController9.h; sourceTree = "<group>"; };
 		F20D0D002247B887002A16B6 /* ViewController9.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController9.m; sourceTree = "<group>"; };
+		F21F3C5F22510140001BED90 /* NSString+CCAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+CCAdd.h"; sourceTree = "<group>"; };
+		F21F3C6022510140001BED90 /* NSString+CCAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+CCAdd.m"; sourceTree = "<group>"; };
 		F2225F30222D62940083B71F /* ViewController4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController4.h; sourceTree = "<group>"; };
 		F2225F31222D62940083B71F /* ViewController4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController4.m; sourceTree = "<group>"; };
 		F22454EA2237E56F00CA27C6 /* ViewController6.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController6.h; sourceTree = "<group>"; };
@@ -138,6 +141,8 @@
 				F2CD1E3921FDFA3500C5E33E /* AppDelegate.m */,
 				F2CD1E3B21FDFA3500C5E33E /* ViewController.h */,
 				F2CD1E3C21FDFA3500C5E33E /* ViewController.m */,
+				F21F3C5F22510140001BED90 /* NSString+CCAdd.h */,
+				F21F3C6022510140001BED90 /* NSString+CCAdd.m */,
 				F2CD1E6A21FDFE0F00C5E33E /* Class */,
 				F2CD1E3E21FDFA3500C5E33E /* Main.storyboard */,
 				F2CD1E4121FDFA3700C5E33E /* Assets.xcassets */,
@@ -339,6 +344,7 @@
 				F24DA6DE2222DA97005557B3 /* ViewController3.m in Sources */,
 				F2225F32222D62940083B71F /* ViewController4.m in Sources */,
 				F26045E2223FCBAC00EA7F1D /* ViewController8.m in Sources */,
+				F21F3C6122510140001BED90 /* NSString+CCAdd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

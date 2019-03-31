@@ -8,28 +8,6 @@
 
 #import "ViewController1.h"
 
-@interface NSString (Reverse)
-
-- (NSString *)reverse;
-@end
-
-@implementation NSString (Reverse)
-
-- (NSString *)reverse {
-    NSMutableString *reverseString = [[NSMutableString alloc] initWithCapacity:self.length];
-
-    [self enumerateSubstringsInRange:NSMakeRange(0, self.length)
-                             options:NSStringEnumerationReverse | NSStringEnumerationByComposedCharacterSequences
-                          usingBlock:^(NSString * _Nullable substring, NSRange substringRange, NSRange enclosingRange, BOOL * _Nonnull stop) {
-                              [reverseString appendString:substring];
-                          }];
-    
-    NSString *string = [NSString stringWithString:reverseString];
-    return string;
-}
-@end
-
-
 @interface ViewController1 ()
 
 @end

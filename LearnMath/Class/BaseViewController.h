@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NSString+CCAdd.h"
 
 @interface BaseViewController : UIViewController
 

@@ -8,32 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface NSString (SizeCalculate)
-
-- (CGSize)calculateSizeWithFont:(UIFont *)font size:(CGSize)size  mode:(NSLineBreakMode)lineBreakMode;
-@end
-
-@implementation NSString (SizeCalculate)
-
-- (CGSize)calculateSizeWithFont:(UIFont *)font size:(CGSize)size  mode:(NSLineBreakMode)lineBreakMode {
-    if (!font) return CGSizeMake(0, 0);
-    
-    NSMutableDictionary *attDic = [NSMutableDictionary new];
-    attDic[NSFontAttributeName] = font;
-    if (lineBreakMode != NSLineBreakByCharWrapping) {
-        NSMutableParagraphStyle *paragraphStyle = [NSMutableParagraphStyle new];
-        paragraphStyle.lineBreakMode = lineBreakMode;
-        attDic[NSParagraphStyleAttributeName] = paragraphStyle;
-    }
-    CGRect rect = [self boundingRectWithSize:size
-                                     options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
-                                  attributes:attDic
-                                     context:nil];
-    return rect.size;
-}
-@end
-
-
 @interface BaseViewController ()
 
 @property (nonatomic, strong) UILabel *questionLabel;
